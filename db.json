@@ -1,11 +1,24 @@
 {
-  "posts": [
-    { "id": "1", "title": "a title", "views": 100 },
-    { "id": "2", "title": "another title", "views": 200 }
+  "users": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "email": "john@example.com",
+      "password": "123456"
+    },
+    {
+      "id": 72,
+      "name": "Juan",
+      "email": "juan@gmail.com",
+      "password": "juan123"
+    }
   ],
-  "comments": [
-    { "id": "1", "text": "a comment about post 1", "postId": "1" },
-    { "id": "2", "text": "another comment about post 1", "postId": "1" }
+  "products": [
+    {
+      "id": "1",
+      "text": "a comment about post 1",
+      "postId": "1"
+    }
   ],
   "profile": {
     "name": "typicode"

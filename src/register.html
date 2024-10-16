@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Register</title>
+</head>
+<body class="center-full">
+    <div class="card border-primary mb-3" style="min-width: 30rem; max-width: 32rem;">
+        <h3 class="card-header">Registrate</h3>
+        <div class="card-body">
+            <form onsubmit="submitForm(event)">
+                <fieldset>
+                  <div>
+                    <label for="name" class="form-label mt-4">Nombre</label>
+                    <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Ingresa tu nombre" required>
+                  </div>
+                  <div>
+                    <label for="email" class="form-label mt-4">Email</label>
+                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Ingresa tu email" required>
+                    <small id="emailHelp" class="form-text text-muted">Ingresa tu direccion de correo electronico</small>
+                </div>
+                <div>
+                    <label for="password" class="form-label mt-4">Contraseña</label>
+                    <input type="password" class="form-control" id="password" placeholder="Contraseña" autocomplete="off" required>
+                    <small id="emailHelp" class="form-text text-muted">Crea una contraseña que no se te olvide y que tenga almenos 7 caracteres</small>
+                </div>
+                <div>
+                    <label for="password2" class="form-label mt-4">Contraseña nuevamente</label>
+                    <input type="password" class="form-control" id="password2" placeholder="Contraseña" autocomplete="off" required>
+                    <small id="emailHelp" class="form-text text-muted">Ingresa tu contraseña de nuevo, es por seguridad</small>
+                </div>
+                  <br>
+                  <button type="submit" class="btn btn-primary">Registrarme</button>
+                  <p style="margin-top: 10px;">Ya tienes cuenta? <a href="index.html">Ingresar</a></p>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <script type="module" src="js/register.js"></script>
+</body>
+</html>
