@@ -16,3 +16,15 @@
 .space-border {
     padding: 1rem;
 }
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.salt:hover {
+    box-shadow: 1px 10px 30px  rgb(149, 149, 149);
+    transition: all 400ms;
+}

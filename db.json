@@ -32,7 +32,14 @@
       ]
     }
   ],
-  "profile": {
-    "name": "typicode"
-  }
+  "bills": [
+    {
+      "id":"7f9c",
+      "name":"Factura borrador",
+      "buyer": "Juan",
+      "supplier": "Utilies",
+      "amount": 2,
+      "price": "2000"
+    }
+  ]
 }
