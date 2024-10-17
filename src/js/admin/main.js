@@ -1,5 +1,6 @@
 import { DBURL, enpointProducts } from "../constants.js";
 import { addProducts } from "../helpers/addProduct.js";
+import { infoProduct } from "../helpers/infoProduct.js";
 import { logout } from "../helpers/logout.js";
 import { validateSessionAdmin } from "../helpers/sessions.js";
 
@@ -31,17 +32,18 @@ async function fetchProducts() {
 
       products.forEach(product => {
           const row = document.createElement('tr');
+          const productId = product.id;
           row.className = 'table-light';
           row.innerHTML = `
               <th scope="row">${product.id}</th>
               <td>${product.name}</td>
               <td>${product.phone}</td>
               <td>
-                  <button type="button" class="btn btn-info" onclick="window.location.href='product.html';">Ver productos</button>
+                  <button type="button" class="btn btn-info" onclick="window.location.href='product.html?id=${productId}';">Ver productos</button>
               </td>
               <td>
-                  <button type="button" class="btn btn-warning">Editar</button>
-                  <button type="button" class="btn btn-danger">Eliminar</button>
+                  <button type="button" id="${productId}" class="btn btn-warning">Editar</button>
+                  <button type="button" id="${productId}" class="btn btn-danger">Eliminar</button>
               </td>
           `;
           productTableBody.appendChild(row);
