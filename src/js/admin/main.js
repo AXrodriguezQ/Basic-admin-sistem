@@ -1,6 +1,5 @@
 import { DBURL, enpointProducts } from "../constants.js";
 import { addProducts } from "../helpers/addProduct.js";
-import { infoProduct } from "../helpers/infoProduct.js";
 import { logout } from "../helpers/logout.js";
 import { validateSessionAdmin } from "../helpers/sessions.js";
 
@@ -42,8 +41,8 @@ async function fetchProducts() {
                   <button type="button" class="btn btn-info" onclick="window.location.href='product.html?id=${productId}';">Ver productos</button>
               </td>
               <td>
-                  <button type="button" id="${productId}" class="btn btn-warning">Editar</button>
-                  <button type="button" id="${productId}" class="btn btn-danger">Eliminar</button>
+                  <button type="button" onclick="window.location.href='edit.html?id=${productId}';" class="btn btn-warning">Editar</button>
+                  <button type="button" onclick="window.location.href='delete.html?id=${productId}';" class="btn btn-danger">Eliminar</button>
               </td>
           `;
           productTableBody.appendChild(row);

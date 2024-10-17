@@ -29,9 +29,8 @@ async function getProducts(id) {
           <div class="card border-primary mb-3" style="max-width: 20rem;">
             <div class="card-header">${product.name}</div>
             <div class="card-body">
-              <h4 class="card-title">Price: $${product.price}</h4>
-              <p class="card-text">Quantity: ${product.amount}</p>
-              <button type="button" class="btn btn-success" onclick="viewProduct('${product.id}')">Ver productos</button>
+              <h4 class="card-title">Precio: $${product.price}</h4>
+              <p class="card-text">Cantidad: ${product.amount}</p>
             </div>
           </div>
         `;
