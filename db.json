@@ -15,9 +15,21 @@
   ],
   "products": [
     {
-      "id": "1",
-      "text": "a comment about post 1",
-      "postId": "1"
+      "id": "7f9b",
+      "name": "Utilies",
+      "phone": "3015656999",
+      "products": [
+        {
+          "name": "lapiz",
+          "price": "1000",
+          "amount": 10
+        },
+        {
+          "name": "borrador",
+          "price": "500",
+          "amount": 30
+        }
+      ]
     }
   ],
   "profile": {

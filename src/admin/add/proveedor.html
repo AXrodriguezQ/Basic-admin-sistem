@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../styles/index.css">
+    <link rel="stylesheet" href="../../styles/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Admin</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">Admin</a>
+        </div>
+        <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="../stock.html">stock</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../facturas.html">Facturas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" id="salir" href="#">Salir</a>
+            </li>
+        </ul>
+    </nav><br>
+
+    <section class="center">
+        <div class="card border-primary mb-3" style="min-width: 40rem; max-width: 32rem;">
+            <h3 class="card-header">Añadir proveedor</h3>
+            <div class="card-body">
+                <form onsubmit="submitForm(event)">
+                    <fieldset>
+                      <div>
+                        <label for="name" class="form-label mt-4">Nombre</label>
+                        <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Ingresa el nombre del proveedor" required>
+                      </div>
+                      <div>
+                        <label for="phone" class="form-label mt-4">Telefono</label>
+                        <input type="text" class="form-control" id="phone" aria-describedby="emailHelp" placeholder="Ingresa el numero del proveedor" required>
+                      </div><br>
+                      <div>
+                        <button type="button" id="btn-ingresar-producto" class="btn btn-success">Ingresar un producto</button>
+                      </div>
+                      <br>
+                      <button type="submit" class="btn btn-primary">Añadir proveedor</button>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script type="module" src="../../js/admin/main.js"></script>
+
+</body>
+</html>

@@ -1,6 +1,19 @@
 import { existUser } from "./helpers/findUsers.js";
 import { register } from "./helpers/register.js";
 
+const session = () => {
+  if (localStorage.getItem('sessionValid') === 'true') {
+    window.location.href = 'dashboard/index.html';
+  }
+  if (localStorage.getItem('sessionValid') === 'admin') {
+    window.location.href = 'admin/index.html';
+  }
+}
+
+(function() {
+    session();
+})();
+
 window.submitForm = async function(e) {
   e.preventDefault();
 
