@@ -20,7 +20,7 @@ async function fetchData() {
 function createCard(item) {
   const card = document.createElement('div');
   card.className = 'card border-success mb-3';
-  card.style.maxWidth = '20rem';
+  card.style.minWidth = '20rem';
   card.style.cursor = 'pointer';
 
   card.innerHTML = `

@@ -1,13 +1,13 @@
 {
   "users": [
     {
-      "id": 1,
+      "id": "1",
       "name": "John Doe",
       "email": "john@example.com",
       "password": "123456"
     },
     {
-      "id": 72,
+      "id": "72",
       "name": "Juan",
       "email": "juan@gmail.com",
       "password": "juan123"
@@ -30,16 +30,64 @@
           "amount": 30
         }
       ]
+    },
+    {
+      "id": "a936",
+      "name": "Norma",
+      "phone": "3010101010",
+      "products": [
+        {
+          "name": "lapiz",
+          "price": "2000",
+          "amount": 100
+        },
+        {
+          "name": "borrador",
+          "price": "800",
+          "amount": 30
+        },
+        {
+          "name": "colbon",
+          "price": "1500",
+          "amount": 20
+        },
+        {
+          "name": "hoja block lisa",
+          "price": "250",
+          "amount": 100
+        },
+        {
+          "name": "carton paja",
+          "price": "700",
+          "amount": 20
+        }
+      ]
     }
   ],
   "bills": [
     {
-      "id":"7f9c",
-      "name":"Factura borrador",
+      "id": "7f9c",
+      "name": "Factura borrador",
       "buyer": "Juan",
       "supplier": "Utilies",
       "amount": 2,
       "price": "2000"
+    },
+    {
+      "id": "2f14",
+      "name": "Compra lapiz",
+      "buyer": "Mario profe",
+      "supplier": "Norma",
+      "amount": "2",
+      "price": "2000"
+    },
+    {
+      "id": "1d32",
+      "name": "Venta carton paja",
+      "buyer": "Jose",
+      "supplier": "Norma",
+      "amount": "2",
+      "price": "1500"
     }
   ]
 }

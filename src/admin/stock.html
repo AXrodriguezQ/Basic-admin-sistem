@@ -32,30 +32,18 @@
     <button type="button" class="btn btn-primary" onclick="window.location.href='add/proveedor.html';">Añadir un proveedor</button>
 
     <table class="table table-hover">
-        <thead>
+      <thead>
           <tr>
-            <th scope="col">Id</th>
-            <th scope="col">Nombre</th>
-            <th scope="col">Telefono</th>
-            <th scope="col">Productos</th>
-            <th scope="col">Acciones</th>
+              <th scope="col">Id</th>
+              <th scope="col">Nombre</th>
+              <th scope="col">Telefono</th>
+              <th scope="col">Productos</th>
+              <th scope="col">Acciones</th>
           </tr>
-        </thead>
-        <tbody>
-          <tr class="table-light">
-            <th scope="row">Light</th>
-            <td>Utilies Rosa</td>
-            <td>3014545999</td>
-            <td>
-                <button type="button" class="btn btn-info" onclick="window.location.href='product.html';">Ver productos</button>
-            </td>
-            <td>
-                <button type="button" class="btn btn-warning">Editar</button>
-                <button type="button" class="btn btn-danger">Eliminar</button>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+      </thead>
+      <tbody id="productTableBody">
+      </tbody>
+  </table>
 
     <script type="module" src="../js/admin/main.js"></script>
 

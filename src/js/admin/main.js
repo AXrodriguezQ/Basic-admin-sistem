@@ -1,3 +1,4 @@
+import { DBURL, enpointProducts } from "../constants.js";
 import { addProducts } from "../helpers/addProduct.js";
 import { logout } from "../helpers/logout.js";
 import { validateSessionAdmin } from "../helpers/sessions.js";
@@ -14,10 +15,43 @@ const session = () => {
 
 const exit = document.getElementById('salir');
 const btnIngresarProducto = document.getElementById('btn-ingresar-producto');
+const productTableBody = document.getElementById('productTableBody');
 
 const products = [];
 
 exit.addEventListener('click', () => logout());
+
+async function fetchProducts() {
+  try {
+      const response = await fetch(DBURL+enpointProducts);
+      if (!response.ok) throw new Error('Failed to fetch products');
+
+      const data = await response.json();
+      const products = data;
+
+      products.forEach(product => {
+          const row = document.createElement('tr');
+          row.className = 'table-light';
+          row.innerHTML = `
+              <th scope="row">${product.id}</th>
+              <td>${product.name}</td>
+              <td>${product.phone}</td>
+              <td>
+                  <button type="button" class="btn btn-info" onclick="window.location.href='product.html';">Ver productos</button>
+              </td>
+              <td>
+                  <button type="button" class="btn btn-warning">Editar</button>
+                  <button type="button" class="btn btn-danger">Eliminar</button>
+              </td>
+          `;
+          productTableBody.appendChild(row);
+      });
+  } catch (error) {
+      console.error('Error fetching products:', error);
+  }
+}
+
+fetchProducts();
 
 btnIngresarProducto.addEventListener('click', () => {
     let name = prompt('Ingresa el nombre del producto');

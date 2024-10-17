@@ -26,7 +26,6 @@ async function fetchData() {
     }
 }
 
-
 function createCard(product) {
     const card = document.createElement('div');
     card.className = 'card bg-secondary mb-3';
@@ -37,7 +36,7 @@ function createCard(product) {
             <h4 class="card-title">${product.name}</h4>
             <p class="card-text">Precio: $${product.price}</p>
             <p class="card-text">Cantidad: ${product.amount}</p>
-            <button type="button" class="btn btn-success">Vender</button>
+            <button type="button" class="btn btn-success" onclick="window.location.href='add/factura.html';">Vender</button>
         </div>
     `;
     
