@@ -1,4 +1,9 @@
 
+a {
+    text-decoration: none;
+    list-style: none;
+}
+
 .center {
     display: flex;
     justify-content: center;
@@ -27,4 +32,33 @@
 .salt:hover {
     box-shadow: 1px 10px 30px  rgb(149, 149, 149);
     transition: all 400ms;
+}
+
+.section-content {
+    width: 80%;
+    min-height: 100vh;
+}
+
+.scroll {
+    padding: 1rem;
+    height: 80vh;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; 
+}
+
+.navbar-nav {
+    width: 20%;
+    height: 100vh;
+    justify-content: start;
+    align-items: start;
+}
+
+.flex-down {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
 }
