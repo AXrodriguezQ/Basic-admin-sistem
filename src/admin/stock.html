@@ -8,42 +8,50 @@
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <title>Admin</title>
 </head>
-<body>
+<body style="display: flex; justify-content: center; align-items: center;">
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">Admin</a>
+  <nav class="navbar-nav navbar navbar-expand-lg bg-body-tertiary">
+      <div class="flex-down">
+        <a class="navbar-brand" style="padding-left: 1rem;" href="index.html">Admin</a>
+        <div id="navbarColor01">
+          <ul class="flex-down">
+              <li class="nav-item" style="list-style: none;">
+                  <a class="nav-link" href="stock.html">stock</a>
+              </li>
+              <li class="nav-item" style="list-style: none;">
+                  <a class="nav-link" href="facturas.html">Facturas</a>
+              </li>
+              <li class="nav-item" style="list-style: none;">
+                <a class="nav-link active" id="salir" href="#">Salir</a>
+              </li>
+          </ul>
         </div>
-        <ul class="navbar-nav me-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="stock.html">stock</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="facturas.html">Facturas</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" id="salir" href="#">Salir</a>
-            </li>
-        </ul>
     </nav><br>
 
-    <h2 class="space-border">Aqui puedes gestionar todo tu stock</h2>
+    <div class="section-content scroll">
+      <form class="d-flex" style="padding: 1rem;">
+        <input class="form-control me-sm-2" type="search" placeholder="Search">
+        <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+      </form><br>
 
-    <button type="button" class="btn btn-primary" onclick="window.location.href='add/proveedor.html';">Añadir un proveedor</button>
+      <h2 class="space-border">Aqui puedes gestionar todo tu stock</h2>
 
-    <table class="table table-hover">
-      <thead>
-          <tr>
-              <th scope="col">Id</th>
-              <th scope="col">Nombre</th>
-              <th scope="col">Telefono</th>
-              <th scope="col">Productos</th>
-              <th scope="col">Acciones</th>
-          </tr>
-      </thead>
-      <tbody id="productTableBody">
-      </tbody>
-  </table>
+      <button type="button" class="btn btn-primary" onclick="window.location.href='add/proveedor.html';">Añadir un proveedor</button>
+
+      <table class="table table-hover">
+        <thead>
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Telefono</th>
+                <th scope="col">Productos</th>
+                <th scope="col">Acciones</th>
+            </tr>
+        </thead>
+        <tbody id="productTableBody">
+        </tbody>
+      </table>
+    </div>
 
     <script type="module" src="../js/admin/main.js"></script>
 

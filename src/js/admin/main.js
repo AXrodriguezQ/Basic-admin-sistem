@@ -104,7 +104,7 @@ window.submitForm = async function(e) {
       if (addProduct === false) {
         alert('Ups... Ocurrió un error al agregar un producto');
       } else {
-        window.location.href = '../index.html';
+        window.location.href = '../stock.html';
       }
     }
 };

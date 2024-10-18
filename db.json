@@ -15,23 +15,6 @@
   ],
   "products": [
     {
-      "id": "7f9b",
-      "name": "Utilies",
-      "phone": "3010101010",
-      "products": [
-        {
-          "name": "lapiz",
-          "price": "1000",
-          "amount": 10
-        },
-        {
-          "name": "borrador",
-          "price": "500",
-          "amount": 30
-        }
-      ]
-    },
-    {
       "id": "a936",
       "name": "Norma",
       "phone": "3010101010",
@@ -82,6 +65,99 @@
           "name": "corrector",
           "price": "1000",
           "amount": 30
+        }
+      ]
+    },
+    {
+      "id": "d488",
+      "name": "Utiles Rosa",
+      "phone": "3016565455",
+      "products": [
+        {
+          "name": "pegasti",
+          "price": "2000",
+          "amount": 20
+        },
+        {
+          "name": "colbon",
+          "price": "2000",
+          "amount": 10
+        },
+        {
+          "name": "block iris",
+          "price": "3000",
+          "amount": 5
+        },
+        {
+          "name": "lapiz #2",
+          "price": "500",
+          "amount": 30
+        }
+      ]
+    },
+    {
+      "id": "e011",
+      "name": "Prisma",
+      "phone": "3012323433",
+      "products": [
+        {
+          "name": "colores baratos",
+          "price": "12000",
+          "amount": 30
+        },
+        {
+          "name": "colores caros",
+          "price": "24000",
+          "amount": 10
+        },
+        {
+          "name": "block rayados",
+          "price": "3000",
+          "amount": 20
+        },
+        {
+          "name": "block liso",
+          "price": "3000",
+          "amount": 20
+        },
+        {
+          "name": "borrador",
+          "price": "800",
+          "amount": 30
+        },
+        {
+          "name": "carton paja",
+          "price": "2000",
+          "amount": 15
+        },
+        {
+          "name": "papel de dibujo",
+          "price": "2000",
+          "amount": 30
+        }
+      ]
+    },
+    {
+      "id": "dc05",
+      "name": "imprime facil",
+      "phone": "3016265244",
+      "products": [
+        {
+          "name": "hojas",
+          "price": "200",
+          "amount": 200
+        }
+      ]
+    },
+    {
+      "id": "c17e",
+      "name": "Probador",
+      "phone": "3012210022",
+      "products": [
+        {
+          "name": "prueba",
+          "price": "200",
+          "amount": 100
         }
       ]
     }
