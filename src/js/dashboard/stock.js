@@ -52,6 +52,7 @@ async function displayCards() {
             supplier.products.forEach(product => {
                 const card = createCard(product);
                 cardContainerProducts.appendChild(card);
+                allProducts.push(product); 
             });
         } else {
             console.warn("Supplier has no products:", supplier);
@@ -59,5 +60,29 @@ async function displayCards() {
     });
 }
 
+const searchForm = document.querySelector('form');
+const searchInput = document.querySelector('input[type="search"]');
+
+let allProducts = [];
+
+function filterProducts(searchTerm) {
+    const cardContainerProducts = document.getElementById('cardContainerProducts');
+    cardContainerProducts.innerHTML = ''; 
+
+    const filteredProducts = allProducts.filter(product =>
+        product.name.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+
+    filteredProducts.forEach(product => {
+        const card = createCard(product);
+        cardContainerProducts.appendChild(card);
+    });
+}
+
+searchForm.addEventListener('submit', (event) => {
+    event.preventDefault(); 
+    const searchTerm = searchInput.value.trim();
+    filterProducts(searchTerm); 
+});
 
 displayCards();

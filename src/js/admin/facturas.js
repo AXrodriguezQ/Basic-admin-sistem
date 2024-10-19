@@ -1,4 +1,5 @@
 import { addBills } from "../helpers/addBills.js";
+import { logout } from "../helpers/logout.js";
 import { validateSessionAdmin } from "../helpers/sessions.js";
 
 const session = () => {
@@ -10,6 +11,9 @@ const session = () => {
 (function() {
     session();
 })();
+
+const exit = document.getElementById('salir');
+exit.addEventListener('click', () => logout());
 
 window.submitForm = async function(e) {
   e.preventDefault();
